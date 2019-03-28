@@ -111,6 +111,9 @@ if (nodeArgs[2] === "movie-this") {
 // Create an empty variable for holding the movie name
 function searchMovie() {
     var movieName = readArgs();
+    if (movieName === "") {
+        movieName = "John Wick"
+    }
     // Loop through all the words in the node argument
     // And do a little for-loop magic to handle the inclusion of "+"s
 
