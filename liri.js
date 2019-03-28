@@ -42,7 +42,7 @@ function searchSong() {
 //===================Do-whatever it says====================//
 function doItSong() {
 
-   var requireVar = require("dotenv").config();
+    var requireVar = require("dotenv").config();
     var keys = require("./keys.js");
     // var Spotify = require('node-spotify-api');
 
@@ -167,11 +167,11 @@ function searchConcerts() {
     var artist = readArgs();
 
     var queryUrl = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
-    console.log(queryUrl);
+   // console.log(queryUrl);
 
     axios.get(queryUrl).then(
         function (response) {
-            console.log(response.data);
+           // console.log(response.data);
             for (var concert of response.data) {
                 console.log(chalk.black.bgYellow("Venue: ") + chalk.white.bgRed(concert.venue.name));
                 console.log(chalk.black.bgYellow("Concert Date and Time: ") + chalk.white.bgRed(concert.datetime));
