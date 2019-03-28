@@ -42,7 +42,7 @@ function searchSong() {
 //===================Do-whatever it says====================//
 function doItSong() {
 
-    var requireVar = require("dotenv").config();
+   var requireVar = require("dotenv").config();
     var keys = require("./keys.js");
     // var Spotify = require('node-spotify-api');
 
@@ -52,11 +52,11 @@ function doItSong() {
                 return console.log(err);
             }
 
-            console.log(data);
+            //console.log(data);
             var doIt = data.split(",")
             for (let i = 0; i < doIt.length; i++) {
 
-                console.log(doIt[i])
+               // console.log(doIt[i])
                 var itSong = doIt[i];
             };
 
