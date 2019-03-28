@@ -27,10 +27,10 @@ function searchSong() {
             for (let i = 0; i < songs.length; i++) {
                 //   const element = info[i];
                 
-                console.log(chalk.blue("Title: ") + chalk.red(songs[i].name));
-                console.log(chalk.blue("Artists: ") + chalk.red(songs[i].artists.map(getArtistsName)));
-                console.log(chalk.blue("Preview of Song: ") + chalk.red(songs[i].preview_url));
-                console.log(chalk.blue("Album Name: ") + chalk.red(songs[i].album.name));
+                console.log(chalk.black.bgYellow("Title: ") + chalk.white.bgRed(songs[i].name));
+                console.log(chalk.black.bgYellow("Artists: ") + chalk.white.bgRed(songs[i].artists.map(getArtistsName)));
+                console.log(chalk.black.bgYellow("Preview of Song: ") + chalk.white.bgRed(songs[i].preview_url));
+                console.log(chalk.black.bgYellow("Album Name: ") + chalk.white.bgRed(songs[i].album.name));
                 console.log('\n')
 
             }
@@ -76,10 +76,10 @@ function doItSong() {
                     var songs = response.tracks.items
                     for (let i = 0; i < songs.length; i++) {
                         //   const element = info[i];
-                        console.log(chalk.blue("Title: ") + chalk.red(songs[i].name));
-                        console.log(chalk.blue("Artists: ") + chalk.red(songs[i].artists.map(getArtistsName)));
-                        console.log(chalk.blue("Preview of Song: ") + chalk.red(songs[i].preview_url));
-                        console.log(chalk.blue("Album Name: ") + chalk.red(songs[i].album.name));
+                        console.log(chalk.black.bgYellow("Title: ") + chalk.white.bgRed(songs[i].name));
+                        console.log(chalk.black.bgYellow("Artists: ") + chalk.white.bgRed(songs[i].artists.map(getArtistsName)));
+                        console.log(chalk.black.bgYellow("Preview of Song: ") + chalk.white.bgRed(songs[i].preview_url));
+                        console.log(chalk.black.bgYellow("Album Name: ") + chalk.white.bgRed(songs[i].album.name));
                         console.log('\n')
 
                     }
@@ -126,17 +126,17 @@ function searchMovie() {
             //console.log(response.data)
 
             console.log('\n')
-            console.log(chalk.blue("Movie title: ") + chalk.red(response.data.Title));
-            console.log(chalk.blue("Release Year: ") + chalk.red(response.data.Year));
-            console.log(chalk.blue("IMDB Rating of the movie is: ") + chalk.red(response.data.imdbRating));
-            console.log(chalk.blue("Movie was produced in: ") + chalk.red(response.data.Country));
-            console.log(chalk.blue("Language of the movie is in: ") + chalk.red(response.data.Language));
-            console.log(chalk.blue("Plot of the movie is about: ") + chalk.red(response.data.Plot));
-            console.log(chalk.blue("Actors in the movie: ") + chalk.red(response.data.Actors));
+            console.log(chalk.black.bgYellow("Movie title: ") + chalk.white.bgRed(response.data.Title));
+            console.log(chalk.black.bgYellow("Release Year: ") + chalk.white.bgRed(response.data.Year));
+            console.log(chalk.black.bgYellow("IMDB Rating of the movie is: ") + chalk.white.bgRed(response.data.imdbRating));
+            console.log(chalk.black.bgYellow("Movie was produced in: ") + chalk.white.bgRed(response.data.Country));
+            console.log(chalk.black.bgYellow("Language of the movie is in: ") + chalk.white.bgRed(response.data.Language));
+            console.log(chalk.black.bgYellow("Plot of the movie is about: ") + chalk.white.bgRed(response.data.Plot));
+            console.log(chalk.black.bgYellow("Actors in the movie: ") + chalk.white.bgRed(response.data.Actors));
 
             for (const i in response.data.Ratings) {
                 if (response.data.Ratings.hasOwnProperty(i)) {
-                    console.log(chalk.blue("Rotten Tomatoes Rating of the movie is: ") + chalk.red(response.data.Ratings[1].Value))
+                    console.log(chalk.black.bgYellow("Rotten Tomatoes Rating of the movie is: ") + chalk.white.bgRed(response.data.Ratings[1].Value))
                     break
                 }
             }
@@ -170,10 +170,10 @@ function searchConcerts() {
         function (response) {
             console.log(response.data);
             for (var concert of response.data) {
-                console.log(chalk.blue("Venue: ") + chalk.red(concert.venue.name));
-                console.log(chalk.blue("Concert Date and Time: ") + chalk.red(concert.datetime));
-                console.log(chalk.blue("Country: ") + chalk.red(concert.venue.country));
-                console.log(chalk.blue("City: ") + chalk.red(concert.venue.city));
+                console.log(chalk.black.bgYellow("Venue: ") + chalk.white.bgRed(concert.venue.name));
+                console.log(chalk.black.bgYellow("Concert Date and Time: ") + chalk.white.bgRed(concert.datetime));
+                console.log(chalk.black.bgYellow("Country: ") + chalk.white.bgRed(concert.venue.country));
+                console.log(chalk.black.bgYellow("City: ") + chalk.white.bgRed(concert.venue.city));
                 console.log('\n')
 
             }
