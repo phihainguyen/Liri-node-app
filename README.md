@@ -9,10 +9,10 @@ Typing the command "node liri.js movie-this" without the title of the movie you 
 ![](movie-this.gif)
 
 Typing the command "node liri.js movie-this" followed by the name of the movie will load the movie with the title info, release year, ratings, languages, plot, genre, and actors that are in the movie
-![](movie-this avenger.gif)
+![](movie-this-avenger.gif)
 
 Typing the command "node liri.js spotify-this-song" without the title of the song you are searching for will just give you info on a default movie which in this case will be "Hotel California"
 ![](spotify-this-song.gif)
 
 Typing the command "node liri.js spotify-this-song" followed by the name of the song will give you the song's title info, the different albums, artists, a url of a preview snippit of the song if available
-![](spotify-this-song faded.gif)
+![](spotify-this-song-faded.gif)
